@@ -3,7 +3,7 @@
 const DB_NAME = 'albumDB';
 const DB_STORE = 'giphy';
 const GIPHY_KEY = 'aztvTqhsjw8Z7b2QFXf7t2ZDxYY4qSLG';
-const GIPHY_URL = 'http://api.giphy.com/v1/gifs/'; //http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=
+const GIPHY_URL = 'https://api.giphy.com/v1/gifs/'; //https://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=
 const DB_VERSION = 1;
 const EL_searchBtn  = document.getElementById('submit');
 const EL_gifGrid = document.getElementById('gif-grid');
