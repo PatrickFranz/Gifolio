@@ -1,0 +1,130 @@
+$color--black: #34495e;
+$color--white: #ecf0f1;
+$btn-primary-bg: #006dcc;
+$btn-hover-red: #FF0000;
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header, footer{
+  background: $color--black;
+  color: $color--white;
+  font-weight: 800;
+  padding: 1rem;
+  user-select: none;
+}
+
+header{
+
+  #fave-btn{
+    float: right;
+    cursor: pointer;
+    transition: all 100ms;
+
+    img{
+      width: 20px;
+      position: relative;
+      top: 3px;
+    }
+
+    &:hover{
+      color: $btn-hover-red;
+    }
+  }
+}
+
+footer{
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 200;
+  position: relative;
+  padding: 20px 0;
+  margin: 0;
+  bottom: 0;
+}
+
+#main-container{
+  
+  #search{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+    input[type='text']{
+      font-size: 1.5rem;
+      color: $color--black;
+      width: 50vw;
+      padding: 10px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      outline: none;
+    }
+  }
+
+  #fave-title{
+    display: none;
+    margin: 0 20px;
+    color: $btn-hover-red;
+    font-size: 1.4rem;
+  }
+
+  #gif-grid{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 70vh;
+
+    .gif-grid-element{
+      position: relative;
+      padding: 10px;
+      align-content: center;
+
+      img{
+        width: 200px;
+      }
+
+      .favorite{
+        position: absolute;
+        display: none;
+        top: 10px;
+        left: 10px;
+        opacity: 0.75;
+        width: 50px;
+      }
+
+      input[type='checkbox']{
+        display: none;
+      }
+    }
+  }
+}
+
+.btn-primary {
+  display: flex;
+  align-content: center;
+  background-color: $btn-primary-bg;
+  border-radius: 2px;
+	color: $color--white;
+  cursor: pointer;
+  font-size: 1.4rem;
+  justify-content: center;
+  line-height: 50px;
+  padding: 0 30px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  margin: 0 10px;
+
+  &:hover{
+    background-color: lighten($btn-primary-bg, 10%);
+  }
+
+  &:active{
+    background-color: darken($btn-primary-bg, 10%);
+  }
+
+
+
+}
