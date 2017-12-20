@@ -32,6 +32,7 @@ EL_faveBtn.addEventListener('click', e => {
   EL_faveTitle.style.display = 'initial';
 });
 
+
 function getDb(store=DB_STORE){
   if('indexedDB' in window){
     const openReq = indexedDB.open(DB_NAME, DB_VERSION);

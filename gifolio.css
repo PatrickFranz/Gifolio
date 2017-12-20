@@ -57,7 +57,8 @@ footer {
     padding: 10px;
     align-content: center; }
     #main-container #gif-grid .gif-grid-element img {
-      width: 200px; }
+      width: 200px;
+      cursor: pointer; }
     #main-container #gif-grid .gif-grid-element .favorite {
       position: absolute;
       display: none;
